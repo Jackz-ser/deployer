@@ -1,10 +1,9 @@
 FROM fusuf/whatsasena:latest
 
-RUN git clone https://github.com/Jackz-ser/Angelina /root/WhatsAsenaDuplicated
-WORKDIR /root/WhatsAsenaDuplicated/
-ENV TZ=Europe/Istanbul
+RUN git clone https://github.com/Afx-Abu/Bilie /Jsl/Abu
+WORKDIR /Jsl/Abu
+ENV TZ=Asia/Kolkata
 RUN npm install supervisor -g
-RUN yarn install --no-audit
-RUN git clone https://github.com/farhan-dqz/media
+RUN yarn install --ignore-engines
+CMD ["node", "index.js"]
 
-CMD ["node", "bot.js"]
